@@ -1,7 +1,7 @@
 //
 //  ContentView.swift
 //  News
-//
+//  c7a2191be81c4eb4b41d7e9fb1ced092
 //  Created by Roman Riepa on 28.03.2023.
 //
 

@@ -11,6 +11,11 @@
 		F12AD93B29D3511400649CA2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12AD93A29D3511400649CA2 /* ContentView.swift */; };
 		F12AD93D29D3511600649CA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F12AD93C29D3511600649CA2 /* Assets.xcassets */; };
 		F12AD94129D3511600649CA2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F12AD94029D3511600649CA2 /* Preview Assets.xcassets */; };
+		F12AD94829D3536C00649CA2 /* news.json in Resources */ = {isa = PBXBuildFile; fileRef = F12AD94729D3536C00649CA2 /* news.json */; };
+		F12AD94B29D353F600649CA2 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12AD94A29D353F600649CA2 /* Article.swift */; };
+		F12AD94D29D360B500649CA2 /* NewsAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12AD94C29D360B500649CA2 /* NewsAPIResponse.swift */; };
+		F12AD95029D36D8700649CA2 /* NewsAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12AD94F29D36D8700649CA2 /* NewsAPIModel.swift */; };
+		F1BAADB629D77ED200190113 /* ArticleRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BAADB529D77ED200190113 /* ArticleRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,11 @@
 		F12AD93C29D3511600649CA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F12AD93E29D3511600649CA2 /* News.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = News.entitlements; sourceTree = "<group>"; };
 		F12AD94029D3511600649CA2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F12AD94729D3536C00649CA2 /* news.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = news.json; sourceTree = "<group>"; };
+		F12AD94A29D353F600649CA2 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		F12AD94C29D360B500649CA2 /* NewsAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAPIResponse.swift; sourceTree = "<group>"; };
+		F12AD94F29D36D8700649CA2 /* NewsAPIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAPIModel.swift; sourceTree = "<group>"; };
+		F1BAADB529D77ED200190113 /* ArticleRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +62,12 @@
 		F12AD93729D3511400649CA2 /* News */ = {
 			isa = PBXGroup;
 			children = (
+				F1BAADB429D77EAB00190113 /* Views */,
 				F12AD93829D3511400649CA2 /* NewsApp.swift */,
 				F12AD93A29D3511400649CA2 /* ContentView.swift */,
+				F12AD94729D3536C00649CA2 /* news.json */,
+				F12AD94E29D36CF600649CA2 /* Models2 */,
+				F12AD94929D353D800649CA2 /* Models */,
 				F12AD93C29D3511600649CA2 /* Assets.xcassets */,
 				F12AD93E29D3511600649CA2 /* News.entitlements */,
 				F12AD93F29D3511600649CA2 /* Preview Content */,
@@ -67,6 +81,31 @@
 				F12AD94029D3511600649CA2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F12AD94929D353D800649CA2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F12AD94A29D353F600649CA2 /* Article.swift */,
+				F12AD94C29D360B500649CA2 /* NewsAPIResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F12AD94E29D36CF600649CA2 /* Models2 */ = {
+			isa = PBXGroup;
+			children = (
+				F12AD94F29D36D8700649CA2 /* NewsAPIModel.swift */,
+			);
+			path = Models2;
+			sourceTree = "<group>";
+		};
+		F1BAADB429D77EAB00190113 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F1BAADB529D77ED200190113 /* ArticleRowView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,7 +136,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					F12AD93429D3511400649CA2 = {
 						CreatedOnToolsVersion = 14.2;
@@ -127,6 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F12AD94829D3536C00649CA2 /* news.json in Resources */,
 				F12AD94129D3511600649CA2 /* Preview Assets.xcassets in Resources */,
 				F12AD93D29D3511600649CA2 /* Assets.xcassets in Resources */,
 			);
@@ -141,6 +181,10 @@
 			files = (
 				F12AD93B29D3511400649CA2 /* ContentView.swift in Sources */,
 				F12AD93929D3511400649CA2 /* NewsApp.swift in Sources */,
+				F12AD95029D36D8700649CA2 /* NewsAPIModel.swift in Sources */,
+				F12AD94D29D360B500649CA2 /* NewsAPIResponse.swift in Sources */,
+				F1BAADB629D77ED200190113 /* ArticleRowView.swift in Sources */,
+				F12AD94B29D353F600649CA2 /* Article.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +224,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -238,6 +283,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -264,6 +310,7 @@
 				CODE_SIGN_ENTITLEMENTS = News/News.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"News/Preview Content\"";
 				DEVELOPMENT_TEAM = DJ5BS8JH99;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -302,6 +349,7 @@
 				CODE_SIGN_ENTITLEMENTS = News/News.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"News/Preview Content\"";
 				DEVELOPMENT_TEAM = DJ5BS8JH99;
 				ENABLE_HARDENED_RUNTIME = YES;
