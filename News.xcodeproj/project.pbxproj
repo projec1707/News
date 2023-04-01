@@ -16,6 +16,11 @@
 		F12AD94D29D360B500649CA2 /* NewsAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12AD94C29D360B500649CA2 /* NewsAPIResponse.swift */; };
 		F12AD95029D36D8700649CA2 /* NewsAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12AD94F29D36D8700649CA2 /* NewsAPIModel.swift */; };
 		F1BAADB629D77ED200190113 /* ArticleRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BAADB529D77ED200190113 /* ArticleRowView.swift */; };
+		F1DE4B2B29D88F3F0086D119 /* ArticleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DE4B2A29D88F3F0086D119 /* ArticleListView.swift */; };
+		F1DE4B2D29D893C50086D119 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DE4B2C29D893C50086D119 /* SafariView.swift */; };
+		F1DE4B3029D8C13A0086D119 /* NewsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DE4B2F29D8C13A0086D119 /* NewsAPI.swift */; };
+		F1DE4B3229D8C1D50086D119 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DE4B3129D8C1D50086D119 /* Category.swift */; };
+		F1DE4B3529D8C9080086D119 /* ArticleNewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DE4B3429D8C9080086D119 /* ArticleNewsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +35,12 @@
 		F12AD94C29D360B500649CA2 /* NewsAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAPIResponse.swift; sourceTree = "<group>"; };
 		F12AD94F29D36D8700649CA2 /* NewsAPIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAPIModel.swift; sourceTree = "<group>"; };
 		F1BAADB529D77ED200190113 /* ArticleRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleRowView.swift; sourceTree = "<group>"; };
+		F1DE4B2929D86CBB0086D119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F1DE4B2A29D88F3F0086D119 /* ArticleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListView.swift; sourceTree = "<group>"; };
+		F1DE4B2C29D893C50086D119 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		F1DE4B2F29D8C13A0086D119 /* NewsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAPI.swift; sourceTree = "<group>"; };
+		F1DE4B3129D8C1D50086D119 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		F1DE4B3429D8C9080086D119 /* ArticleNewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleNewsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +73,12 @@
 		F12AD93729D3511400649CA2 /* News */ = {
 			isa = PBXGroup;
 			children = (
+				F1DE4B3329D8C8D70086D119 /* ViewModel */,
+				F1DE4B2E29D8C11D0086D119 /* API */,
+				F12AD93A29D3511400649CA2 /* ContentView.swift */,
+				F1DE4B2929D86CBB0086D119 /* Info.plist */,
 				F1BAADB429D77EAB00190113 /* Views */,
 				F12AD93829D3511400649CA2 /* NewsApp.swift */,
-				F12AD93A29D3511400649CA2 /* ContentView.swift */,
 				F12AD94729D3536C00649CA2 /* news.json */,
 				F12AD94E29D36CF600649CA2 /* Models2 */,
 				F12AD94929D353D800649CA2 /* Models */,
@@ -88,6 +102,8 @@
 			children = (
 				F12AD94A29D353F600649CA2 /* Article.swift */,
 				F12AD94C29D360B500649CA2 /* NewsAPIResponse.swift */,
+				F1DE4B2C29D893C50086D119 /* SafariView.swift */,
+				F1DE4B3129D8C1D50086D119 /* Category.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -104,8 +120,25 @@
 			isa = PBXGroup;
 			children = (
 				F1BAADB529D77ED200190113 /* ArticleRowView.swift */,
+				F1DE4B2A29D88F3F0086D119 /* ArticleListView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F1DE4B2E29D8C11D0086D119 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				F1DE4B2F29D8C13A0086D119 /* NewsAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		F1DE4B3329D8C8D70086D119 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F1DE4B3429D8C9080086D119 /* ArticleNewsViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,11 +213,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				F12AD93B29D3511400649CA2 /* ContentView.swift in Sources */,
+				F1DE4B3229D8C1D50086D119 /* Category.swift in Sources */,
+				F1DE4B2B29D88F3F0086D119 /* ArticleListView.swift in Sources */,
+				F1DE4B3029D8C13A0086D119 /* NewsAPI.swift in Sources */,
 				F12AD93929D3511400649CA2 /* NewsApp.swift in Sources */,
 				F12AD95029D36D8700649CA2 /* NewsAPIModel.swift in Sources */,
+				F1DE4B2D29D893C50086D119 /* SafariView.swift in Sources */,
 				F12AD94D29D360B500649CA2 /* NewsAPIResponse.swift in Sources */,
 				F1BAADB629D77ED200190113 /* ArticleRowView.swift in Sources */,
 				F12AD94B29D353F600649CA2 /* Article.swift in Sources */,
+				F1DE4B3529D8C9080086D119 /* ArticleNewsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +354,9 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = News/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -355,6 +396,9 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = News/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
